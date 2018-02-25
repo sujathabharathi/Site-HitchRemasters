@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width initial-scale=1.0">
+  <meta name="descrption=" content=" Remastering the old films into high quality film-Digital remastering">
+  <link href="https://fonts.googleapis.com/css?family=Frijole|Flamenco|New+Rocker" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <title>Hitch Remasters - Contact Us</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="jsquery/responsive-nav.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="header_img">
+      <img src="images/logo.jpg" alt="logo">
+      <h1>Hitch Remasters
+      </h1>
+
+    </div>
+  </header>
+  <nav class="nav-collapse">
+    <ul>
+      <li><a href="index.html"> Index</a></li>
+      <li><a href="aboutus.html"> About us</a></li>
+      <li><a href="director.html"> About Director</a></li>
+      <li><a href="films.html"> Remastered</a></li>
+      <li><a href="contact.html"> Contact Us</a></li>
+    </ul>
+  </nav>
+  <main class="main_class_bg">
+
+    <h2 id="headings"> Contact Us</h2><br>
+    <div id="decor">
+      <form method="post" action="mailto:alfred@hitchremasters.com" enctype="text/plain">
+        <label for="firstname">First Name*</label><br>
+        <input type="text" name="firstname" id="firstname" placeholder="Your name.." required><br>
+
+        <label for="lastname">Last Name*</label><br>
+        <input type="text" name="lastname" id="lastname" placeholder="Your last name.." required><br>
+
+        <label for="country">Country</label><br>
+        <select id="country" name="country">
+		  <option>New Zealand</option>
+		  <option>Australia</option>
+		  <option>Canada</option>
+		  <option>USA</option>
+		  <option>India</option>
+		  <option>Hong Kong</option>
+		</select><br>
+
+        <label for="message">Message*</label><br>
+        <textarea name="message" id="message" placeholder="Write something.." style="height:150px;" required></textarea>
+
+        <div id="buttons_align">
+          <input type="submit" value="Submit" id="contsumbit">
+          <input type="reset" value="Cancel"></div>		  
+      </form>
+    </div>
+	
+    <h2> Our Location</h2>
+
+    <div id="googlemap">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723.0870277559086!2d172.64366982735788!3d-43.53678497912546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318a1f3dea482b%3A0xfcded2451acbd613!2sAra+Institute!5e0!3m2!1sen!2snz!4v1496411588210"  allowfullscreen></iframe>
+    </div>
+
+    <footer id="footeralign">
+      <div id="footerborder">
+        <form>
+          <label id="footer_label">News Letter : </label>
+          <input type="email" name="email" placeholder="Please Enter Your Email...">
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+
+      <ul>
+        <li>
+          <figure><img src="images/footerl.png" alt="leftfilm" class="footer_figure"></figure>
+        </li>
+        <li><a href="#"><img  src="images/facebook.png" alt="Facebook" ></a></li>
+        <li><a href="#"><img  src="images/tweet.png" alt="Tweeter"></a></li>
+        <li><a href="#"><img  src="images/insta.png" alt="Instagram"></a></li>
+        <li>
+          <figure><img src="images/footerl.png" alt="rightfilm" class="footer_figure"></figure>
+        </li>
+      </ul>
+
+      <p id="copy"> &copy; Alfred Wenders,2017 | Privacy Policy</p>
+
+    </footer>
+  </main>
+   <script>
+	  var navigation = responsiveNav(".nav-collapse", {
+		insert: "before",
+		label: "&#8801;"
+	  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width initial-scale=1.0">
+  <meta name="descrption=" content=" Remastering the old films into high quality film-Digital remastering">
+  <link href="https://fonts.googleapis.com/css?family=Frijole|Flamenco|New+Rocker" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <title>Hitch Remasters - About Us</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="jsquery/responsive-nav.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header_img">
+      <img src="images/logo.jpg" alt="logo"/>
+      <h1>Hitch Remasters </h1>
+    </div>
+  </header>
+
+  <nav class="nav-collapse">
+    <ul>
+      <li><a href="index.html"> Index</a></li>
+      <li><a href="aboutus.html"> About us</a></li>
+      <li><a href="director.html"> About Director</a></li>
+      <li><a href="films.html"> Remastered</a></li>
+      <li><a href="contact.html"> Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="main_class_bg">
+    <div>
+      <img src="images/sujatha.gif" alt="logo_animation" id="logoanimation" />
+    </div>
+	
+    <div id="para_text">
+      <h2 id="headings"> About Us</h2>
+	  
+      <p>Alfred Wenders has had a passion for films ever since he first went to the cinema with his grandmother to see "Lassie" when he was six. In the years that followed he pleaded with his parents to take him to see films at every opportunity. At secondary school he started a film club, using an art room with windows blacked out with curtains to show non-mainstream films that he obtained from overseas suppliers. Over time he became interested in restoring older films. </p>     
+
+      <div class="container">
+        <img src="images/chris.png" alt="sir_chris" class="image" />
+        <div class="overlay">
+          <div class="text">Mr.Alfred Wenders</div>
+        </div>
+      </div>
+
+      <p>In the late 1990<span id="subscript">s</span> Alfred realised there was a gap in the market: there were no companies focussing solely on film restoration, so he started to invest in the necessary equipment and began working on copies of films he had acquired. In 1999 he started his company, which was then called Hitch Restorations, in homage to his favourite film director, Alfred Hitchcock. </p>
+
+      <p>He approached a few major film companies, pitching his work, and was fortunate to get some work from them. As word of the quality of his work got around, more film companies approached him to work on their back catalogues. Over time the focus of the company changed to digitally remastering films, so the company was renamed Hitch Remasters. Since then the company has remastered hundreds of films, improving their quality and preserving them for future generations to enjoy.</p>
+	  
+    </div>
+
+    <footer id="footeralign">
+      <div id="footerborder">
+        <form>
+          <label id="footer_label">News Letter : </label>
+          <input type="email" name="email" placeholder="Please Enter Your Email...">
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+
+      <ul>
+        <li>
+          <figure><img src="images/footerl.png" alt="leftfilm" class="footer_figure"></figure>
+        </li>
+        <li><a href="#"><img  src="images/facebook.png" alt="Facebook"/></a></li>
+        <li><a href="#"><img  src="images/tweet.png" alt="Tweeter"/></a></li>
+        <li><a href="#"><img  src="images/insta.png" alt="Instagram"/></a></li>
+        <li>
+          <figure><img src="images/footerl.png" alt="rightfilm" class="footer_figure" /></figure>
+        </li>
+      </ul>
+
+      <p id="copy"> &copy; Alfred Wenders,2017 | Privacy Policy</p>
+
+    </footer>
+  </main>
+
+  <script>
+	  var navigation = responsiveNav(".nav-collapse", {
+		insert: "before",
+		label: "&#8801;"
+	  });
+  </script>
+
+</body>
+
+</html>

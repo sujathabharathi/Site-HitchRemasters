@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width = device-width initial-scale=1.0">
+	  <meta name="descrption=" content=" Remastering the old films into high quality film-Digital remastering">
+	  <link href="https://fonts.googleapis.com/css?family=Frijole|Flamenco|New+Rocker" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	  <title>Hitch Remasters - Remastered</title>
+	  <link rel="stylesheet" href="css/stylesheet.css">
+	  <script src="jsquery/responsive-nav.js"></script>
+	  <script src="jsquery/videoplay.js"></script>     
+  </head>
+
+  <body>
+    <header>
+      <div class="header_img"> 
+			<img src="images/logo.jpg" alt="logo"/>
+			<h1>Hitch Remasters </h1>
+      </div>
+    </header>
+	
+   <nav class="nav-collapse">
+		<ul>
+			<li><a href="index.html"> Index</a></li>
+			<li><a href="aboutus.html"> About us</a></li>
+			<li><a href="director.html"> About Director</a></li>
+			<li><a href="films.html"> Remastered</a></li>
+			<li><a href="contact.html"> Contact Us</a></li>
+		</ul>
+    </nav>
+	
+    <main class="main_class_bg">
+		<div id="film">
+			<h2 id="headings"> Mr.Elia Kazan's Films Digital Remastered</h2>
+			<h4> ( MouseOver to see a Clip)</h4><br>
+		   
+			<ul id="centerfilm">
+				<li>
+					<div class="container_video">
+						<img src="images/Streetcar.jpg" alt="streetcar" class="films"/>
+							<div class="overlay_video" onmouseover="Play1()" onmouseout="Pause1()">
+								<video class="remastered" id="video1">
+									<source src="media/streetcar.mp4" type="video/mp4">
+								</video> 
+								<a href="streetcar.html" class="text_video"> Click here to see the FULL Movie </a>
+							</div>
+					</div>
+				</li>
+			  
+				<li>
+					<div class="container_video"> 
+						<img src="images/vivazapata.jpg" alt="viva" class="films"/>
+							<div class="overlay_video" onmouseover="Play2()" onmouseout="Pause2()"> 
+								<video class="remastered" id="video2">
+									<source src="media/viva.mp4" type="video/mp4">
+								</video> 
+								<a href="viva.html" class="text_video"> Click here to see the FULL Movie </a>
+							</div>
+					</div>
+				</li>
+				
+				<li>          
+					<div class="container_video"> 			  
+						<img src="images/boomarang.jpg" alt="boom" class="films"/>
+							<div class="overlay_video" onmouseover="Play3()" onmouseout="Pause3()"> 
+								<video class="remastered" id="video3">
+									<source src="media/boomerang.mp4" type="video/mp4">
+								</video> 
+								<a href="boomarang.html" class="text_video"> Click here to see the FULL Movie </a>
+							</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+			
+				<h2> Future films for Remastering</h2>
+				<h4> [MouseOver on Scrolling]</h4>
+				
+		<div class="scrollshow">
+			<div class="mover">
+				<img src="images/gentleblack.jpg" alt="gentleblack" class="futurefilms"/>
+				<img src="images/americablack.jpg" alt="americablack" class="futurefilms"/>
+				<img src="images/waterfrontblack.jpg" alt="waterfrontblack" class="futurefilms"/>
+				<img src="images/pinkyblack.jpg" alt="pinkyblack" class="futurefilms"/>
+				<img src="images/faceblack.jpg" alt="faceblack" class="futurefilms"/>
+				<img src="images/wildblack.jpg" alt="wildblack" class="futurefilms"/>
+			</div>	
+			
+			<div class="mover-2">
+				<img src="images/gentle.jpg" alt="gentle" class="futurefilms"/>
+				<img src="images/america.jpg" alt="america" class="futurefilms"/>
+				<img src="images/waterfront.jpg" alt="waterfront" class="futurefilms"/>
+				<img src="images/pinky.jpg" alt="pinky" class="futurefilms"/>
+				<img src="images/face.jpg" alt="face" class="futurefilms"/>
+				<img src="images/wild.jpg" alt="wild" class="futurefilms"/>
+			</div>
+		</div>
+   
+		<footer id="footeralign">
+			<div id="footerborder">			  
+				<form> 
+					<label id="footer_label">News Letter : </label>
+					<input type="email" name="email" placeholder="Please Enter Your Email...">
+					<input type="submit" value="Sign Up">
+				</form>
+			</div>			
+			
+			<ul>
+				<li><figure><img src="images/footerl.png" alt="leftfilm" class="footer_figure"></figure></li>
+				<li><a href="#"><img  src="images/facebook.png" alt="Facebook" ></a></li>
+				<li><a href="#"><img  src="images/tweet.png" alt="Tweeter"></a></li>
+				<li><a href="#"><img  src="images/insta.png" alt="Instagram"></a></li>
+				<li><figure><img src="images/footerl.png" alt="rightfilm" class="footer_figure"></figure></li>
+			</ul>			  
+				 
+			<p id="copy"> &copy; Alfred Wenders,2017 | Privacy Policy</p>
+			
+		</footer>
+	</main>
+    <script type="text/javascript">
+		var myVideo1 = document.getElementById("video1");
+		var myVideo2 = document.getElementById("video2");
+		var myVideo3 = document.getElementById("video3");    
+    </script>
+	 <script>
+	  var navigation = responsiveNav(".nav-collapse", {
+		insert: "before",
+		label: "&#8801;"
+	  });
+  </script>
+</body>
+</html>
